@@ -3,9 +3,12 @@ import streamlit as st
 
 from langchain.vectorstores import DeepLake
 from langchain_pinecone import PineconeVectorStore
-from langchain.embeddings import CohereEmbeddings
+
+# from langchain.embeddings import CohereEmbeddings
 from langchain.retrievers import ContextualCompressionRetriever
-from langchain.retrievers.document_compressors import CohereRerank
+
+# from langchain.retrievers.document_compressors import CohereRerank
+from langchain_cohere import CohereEmbeddings, CohereRerank
 
 
 @st.cache_resource()
